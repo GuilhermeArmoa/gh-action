@@ -14,4 +14,14 @@ jobs:
         run: |
           echo "Primeiro Worlow criado"
           echo "Success"
-      
+      - name: "Script Python"
+        run: |
+          variavel = "Msg Python"
+          print(variavel)
+        shell: python
+segundo-job:
+  name: "Instalação do ambiente NodeJS"
+  runs-on: ubuntu-latest
+  steps: 
+     - name: "Veriicação do node js arual"
+       run: node --version
