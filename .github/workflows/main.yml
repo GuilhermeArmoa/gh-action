@@ -23,11 +23,11 @@ jobs:
     name: "Instalação do ambiente NodeJS"
     runs-on: ubuntu-latest
     steps: 
-     - name: "Veriicação do node js arual"
-       run: node --version
-     - name: "Definir versão node js"
-     - uses: actions/setup-node@v4
-       with: 
-         node-version: '20.13.1'
-     - name: "Verificação após instalação"
-       run: node --version
+       - name: "Veriicação do node js arual"
+         run: node --version
+       - name: "Definir versão node js"
+       - uses: actions/setup-node@v4
+         with: 
+           node-version: '20.13.1'
+       - name: "Verificação após instalação"
+         run: node --version
