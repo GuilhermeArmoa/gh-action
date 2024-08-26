@@ -19,9 +19,9 @@ jobs:
           variavel = "Msg Python"
           print(variavel)
         shell: python
-segundo-job:
-  name: "Instalação do ambiente NodeJS"
-  runs-on: ubuntu-latest
-  steps: 
+  segundo-job:
+    name: "Instalação do ambiente NodeJS"
+    runs-on: ubuntu-latest
+    steps: 
      - name: "Veriicação do node js arual"
        run: node --version
